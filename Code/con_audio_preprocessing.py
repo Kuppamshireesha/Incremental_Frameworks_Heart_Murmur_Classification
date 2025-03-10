@@ -101,14 +101,4 @@ def main():
     soundPath = "./Dataset/Filtered_Audios_MVP/MVP"
     mfcc_data = SoundConversionPipeline(soundPath)
     print("Feature extraction completed. Data saved to CSV.")
-    import pandas as pd
-
-# Load the CSV file
-df_continuous = pd.read_csv("./Dataset/cont_audio_mfcc_features_with_labels.csv")
-
-# Display first few rows
-print(df_continuous.head())
-print(df_continuous.info())  # Check for missing values
-
-
 main()
